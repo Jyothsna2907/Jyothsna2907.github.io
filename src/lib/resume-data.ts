@@ -1,4 +1,4 @@
-import type { ResumeData } from '@/types';
+import type { NavItem, ResumeData } from '@/types';
 import { Code, Layers, DatabaseIcon, Cloud, Container, GitMerge, TerminalSquare, CheckCircle2, BookOpenCheck, Linkedin, Mail, Phone, Briefcase, GraduationCap, Award, Lightbulb, Send, Settings2, Brain } from 'lucide-react';
 
 export const resumeData: ResumeData = {
