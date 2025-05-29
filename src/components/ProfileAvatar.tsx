@@ -17,7 +17,7 @@ interface ProfileAvatarProps {
 
 export function ProfileAvatar({ baseImageSrcPath, altText, width, height }: ProfileAvatarProps) {
   const [finalAvatarSrc, setFinalAvatarSrc] = useState<string | null>(null);
-  const [baseImageDataUri, setBaseImageDataUri] = useState<string | null>(null);
+  const [baseImageDataUri, setBaseImageDataUri] = useState<string>('');
   const [isLoading, setIsLoading] = useState(true);
   const [errorState, setErrorState] = useState<string | null>(null);
   const { toast } = useToast();
@@ -26,7 +26,7 @@ export function ProfileAvatar({ baseImageSrcPath, altText, width, height }: Prof
     async function fetchAndConvertBaseImage() {
       setIsLoading(true);
       setErrorState(null);
-      setBaseImageDataUri(null); // Reset before fetching
+      setBaseImageDataUri(''); // Reset before fetching
 
       try {
         const response = await fetch(baseImageSrcPath);
@@ -126,22 +126,23 @@ export function ProfileAvatar({ baseImageSrcPath, altText, width, height }: Prof
   return (
     <div className="relative" style={{ width: `${width}px`, height: `${height}px` }}>
       <Image
-        src={displaySrc}
+        // src={displaySrc}
+        src={baseImageSrcPath}
         alt={altText}
         width={width}
         height={height}
         className="rounded-full shadow-2xl border-4 border-primary/20 object-cover"
-        priority={!finalAvatarSrc || finalAvatarSrc === baseImageDataUri} 
-        onError={() => {
-            if (isActive) { // Check if component is still mounted
-                console.error('ProfileAvatar: Failed to load final avatar image resource:', displaySrc);
-                const description = 'Displaying a default placeholder image.';
-                setErrorState(`Failed to load avatar image. ${description}`);
-                setFinalAvatarSrc(`https://placehold.co/${width}x${height}.png`);
-                toast({ variant: 'destructive', title: 'Image Load Error', description });
-                setIsLoading(false); // Ensure loading is stopped on image error
-            }
-        }}
+        // priority={!finalAvatarSrc || finalAvatarSrc === baseImageDataUri} 
+        // onError={() => {
+        //     if (isActive) { // Check if component is still mounted
+        //         console.error('ProfileAvatar: Failed to load final avatar image resource:', displaySrc);
+        //         const description = 'Displaying a default placeholder image.';
+        //         setErrorState(`Failed to load avatar image. ${description}`);
+        //         setFinalAvatarSrc(`https://placehold.co/${width}x${height}.png`);
+        //         toast({ variant: 'destructive', title: 'Image Load Error', description });
+        //         setIsLoading(false); // Ensure loading is stopped on image error
+        //     }
+        // }}
       />
       {/* Show error badge specifically if 3D gen failed and we fell back to 2D */}
       {errorState && finalAvatarSrc === baseImageDataUri && baseImageDataUri !== null && ( 
