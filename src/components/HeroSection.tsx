@@ -44,7 +44,7 @@ export function HeroSection() {
         </div>
         <div className="relative flex justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <ProfileAvatar
-            baseImageSrcPath="/jyothsna/profile-base.png" 
+            baseImageSrcPath="/profile-base.png" 
             altText={name}
             width={400}
             height={400}

@@ -21,7 +21,7 @@ export function ExperienceSection() {
               <div className="md:w-1/3 p-2">
                 <div className="relative aspect-video md:aspect-auto md:h-full w-full overflow-hidden rounded-md md:rounded-l-md md:rounded-r-none">
                   <Image
-                    src={`/jyothsna${exp.projectImage}`}
+                    src={`${exp.projectImage}`}
                     alt={`${exp.company} project showcase`}
                     layout="fill"
                     objectFit="cover"
