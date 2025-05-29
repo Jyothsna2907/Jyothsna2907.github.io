@@ -107,6 +107,7 @@ export const resumeData: ResumeData = {
     {
       company: 'Dell',
       location: 'Austin, TX',
+      projectImage: '/dell-experience.png',
       duration: 'Aug 2023 – Present',
       title: 'Senior Java Developer',
       projectDescription:
@@ -127,7 +128,8 @@ export const resumeData: ResumeData = {
         'ELK Stack',
       ],
       responsibilities: [
-        'Built scalable, component-based front-end architecture using Angular 17, reactive forms, RxJS, and custom pipes for high-performance UI and seamless user interactions.',
+        'Built scalable, component-based front-end architecture using Angular 17, reactive forms, RxJS, and custom\n        pipes for high-performance UI and seamless user interactions.',
+
         'Implemented Angular Router with lazy loading and route guards for client-side navigation and access control.',
         'Crafted responsive layouts and dynamic interactions using HTML5, CSS3 (SCSS), and JavaScript (ES6+), ensuring cross-browser compatibility and accessibility.',
         'Optimized DOM performance using trackBy, ChangeDetectionStrategy.OnPush, and async pipes in Angular templates.',
@@ -144,10 +146,12 @@ export const resumeData: ResumeData = {
         'Managed CI/CD lifecycle using GitHub Actions, integrating static code analysis and quality gates into the pipeline.',
       ],
       projectImageHint: "data analytics platform"
+
     },
     {
       company: 'Bristol Myers Squibb',
       location: 'Tampa, FL',
+      projectImage: '/bms-experience.png',
       duration: 'Apr 2021 – July 2023',
       title: 'Senior Java Developer',
       projectDescription:
@@ -169,6 +173,7 @@ export const resumeData: ResumeData = {
         'JUnit',
         'Mockito',
         'Logback',
+        'projectImage: "/bms-experience.png"'
       ],
       responsibilities: [
         'Built scalable, component-based front-end architecture using Angular 15, reactive forms, RxJS, and custom pipes for high-performance UI and seamless user interactions.',
@@ -192,6 +197,7 @@ export const resumeData: ResumeData = {
     {
       company: 'Casey’s General Store',
       location: 'Ankey, IA',
+      projectImage: '/cgs-experience.png',
       duration: 'Feb 2020 – March 2021',
       title: 'J2EE Developer',
       projectDescription:
@@ -212,6 +218,7 @@ export const resumeData: ResumeData = {
         'Helm',
         'ConfigMaps',
         'Secrets',
+        'projectImage: "/cgs-experience.png"'
       ],
       responsibilities: [
         'Designed and developed interactive web interfaces using Angular 5, with reusable components, services, and observables for reactive UI.',
@@ -251,7 +258,7 @@ export const resumeData: ResumeData = {
         'Axios',
       ],
       responsibilities: [
-        'Developed single-page applications using React, with custom hooks, context API, and Axios for RESTful communication.',
+        'Developed single-page applications using React, with custom hooks, context API, and Axios for RESTful\n        communication.',
         'Created dynamic, accessible web pages with clean semantic markup, custom styles, and interactive elements using vanilla JavaScript and DOM manipulation.',
         'Implemented backend business logic using Java 7/early Java 8 and Spring MVC, integrating REST endpoints with validation and exception handling.',
         'Integrated RabbitMQ for asynchronous messaging between distributed modules, ensuring reliable and decoupled processing.',
@@ -261,6 +268,7 @@ export const resumeData: ResumeData = {
         'Wrote unit tests using JUnit 4, with log tracking through Log4j and manual test validation as part of early CI workflows.',
         'Delivered features in a Scrum-based Agile environment with iterative planning, daily standups, and story-based development.',
       ],
+      projectImage: '/bom-experience.png',
       projectImageHint: "banking platform interface"
     },
     {
@@ -290,6 +298,7 @@ export const resumeData: ResumeData = {
         'Automated build and deployment processes using Jenkins, setting up jobs for continuous integration, automated testing, and deployment to legacy environments.',
         'Developed unit tests using JUnit 4 and Mockito, ensuring code coverage and reliability through manual testing workflows.',
       ],
+      projectImage: "/pro-experience.png",
       projectImageHint: "custom web application"
     },
   ],

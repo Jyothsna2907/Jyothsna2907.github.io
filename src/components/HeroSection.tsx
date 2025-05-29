@@ -1,9 +1,11 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Mail, Phone, Linkedin, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { resumeData } from '@/lib/resume-data';
 import { SectionWrapper } from './SectionWrapper';
+import { ProfileAvatar } from './ProfileAvatar'; // New import
 
 export function HeroSection() {
   const { name, title, contact } = resumeData;
@@ -41,14 +43,11 @@ export function HeroSection() {
           </Button> */}
         </div>
         <div className="relative flex justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <Image
-            src="https://placehold.co/400x400.png"
-            alt={name}
+          <ProfileAvatar
+            baseImageSrcPath="/jyothsna/profile-base.png" 
+            altText={name}
             width={400}
             height={400}
-            className="rounded-full shadow-2xl border-4 border-primary/20 object-cover"
-            priority
-            data-ai-hint="professional portrait"
           />
            <div className="absolute inset-0 rounded-full border-4 border-primary opacity-20 animate-pulse"></div>
         </div>

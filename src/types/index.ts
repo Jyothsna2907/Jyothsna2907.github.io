@@ -20,6 +20,7 @@ export interface SkillCategory {
 
 export interface Experience {
   company: string;
+  projectImage: string;
   location: string;
   duration: string;
   title: string;

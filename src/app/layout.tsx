@@ -11,7 +11,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'CodeCanvas Portfolio | Jyothsna Kondapalli',
+  title: 'Jyothsna Kondapalli | Portfolio',
   description: 'Engineering IT Professional Portfolio for Jyothsna Kondapalli, showcasing skills in full-stack development, microservices, and cloud technologies.',
 };
 
