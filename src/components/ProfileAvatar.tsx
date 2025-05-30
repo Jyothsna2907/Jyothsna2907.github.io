@@ -2,10 +2,10 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { Skeleton } from '@/components/ui/skeleton';
-import { useToast } from '@/hooks/use-toast';
-import { AlertCircle } from 'lucide-react';
+// import { useEffect, useState } from 'react';
+// import { Skeleton } from '@/components/ui/skeleton';
+// import { useToast } from '@/hooks/use-toast';
+// import { AlertCircle } from 'lucide-react';
 
 interface ProfileAvatarProps {
   baseImageSrcPath: string; // e.g., "/profile-base.png"

@@ -2,7 +2,7 @@ import { resumeData } from '@/lib/resume-data';
 import { SectionWrapper } from './SectionWrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
+// import { cn } from '@/lib/utils';
 
 export function SkillsSection() {
   const { technicalSkills } = resumeData;
